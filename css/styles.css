@@ -26,6 +26,7 @@ nav ul li {
 nav ul li a {
     color: white;
     text-decoration: none;
+    font-family: sans-serif;
 }
 
 nav ul li a:active {
@@ -33,3 +34,43 @@ nav ul li a:active {
     padding: 4px;
 }
 
+.container {
+    display: flex;
+    background-color: white;;
+}
+
+.side-col {
+    flex: 1;
+    min-height: 600px;
+    background-color: darkblue;
+    margin: 4px;
+}
+
+.main-col {
+    flex: 4;
+    min-height: 600px;
+    background-color: darkblue;
+    margin: 4px;
+}
+
+h2 {
+    color: yellowgreen;
+    -webkit-text-stroke: white 1px;
+    font-family: sans-serif;
+    padding: 8px;
+}
+
+.news-list {
+    list-style-type: none;
+    padding: 0;
+}
+
+.news-item {
+    color: white;
+    border: dashed white 1px;
+    padding: 8px;
+}
+
+.news-item h3 {
+    font-family: sans-serif;
+}
