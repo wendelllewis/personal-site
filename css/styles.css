@@ -10,7 +10,7 @@ header h1 {
     -webkit-text-stroke: white 2px;
     font-size: 4em;
     text-align: center;
-    font-family: sans-serif;
+    font-family: serif;
     font-weight: bolder;
 }
 
@@ -34,7 +34,24 @@ nav ul li a:active {
     padding: 4px;
 }
 
-.container {
+.article-container {
+    margin: 0 30% 0 30%;
+    min-width: 200px;
+    border: dashed 2px white;
+}
+
+.article {
+    margin: 30px;
+    border-bottom: solid 1px white;
+}
+
+.article a,p {
+    color: white;
+    text-decoration: none;
+}
+
+
+/* .container {
     display: flex;
     background-color: white;;
 }
@@ -44,6 +61,7 @@ nav ul li a:active {
     min-height: 600px;
     background-color: darkblue;
     margin: 4px;
+    margin-right: 0;
 }
 
 .main-col {
@@ -67,10 +85,15 @@ h2 {
 
 .news-item {
     color: white;
-    border: dashed white 1px;
     padding: 8px;
 }
 
-.news-item h3 {
+.news-item h3, a {
     font-family: sans-serif;
+    color: white;
+    text-decoration: none;
 }
+
+#more-link {
+    padding: 8px;
+} */
