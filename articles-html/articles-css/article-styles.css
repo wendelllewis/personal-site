@@ -32,3 +32,8 @@ a {
     color: white;
     text-decoration: none;
 }
+
+.em {
+    padding: 10px;
+    border: solid 1px white;
+}

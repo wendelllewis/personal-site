@@ -9,3 +9,10 @@ Feel free to explore my code. I appreciate feedback! I am learning just as we al
 
 Have a good day!
 Wen
+
+Currently, here is how the python functions:
+    1. a function input_parse() is defined
+    2. for each line of text in the inputted file, input_parse() checks to see if the line starts with # or ##
+    3. if the line starts with ##, it stores and returns the line as an element in a list called headers
+    4. if the line starts with #, it stores and returns the line as an element in a list called paragraphs
+    5. input_parse() is called, and then the lists are seperated into their own variables, which are returned
