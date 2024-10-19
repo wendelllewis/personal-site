@@ -14,20 +14,28 @@ def input_parse(file_path):
     paragraphs_final = [item[1:] for item in paragraphs]
     return headers_final, paragraphs_final
 
+def replace_headers(file_path, header_content, index):
+    with open(file_path, "r") as file:
+        file_content = file.read()
+        new_header = file_content.replace(f"[[ header{index} ]]", f"<h1>{header_content}</h1>")
+    with open(file_path, "w") as file:
+        file.write(new_header)
+
+def replace_paragraphs(file_path, paragraph_content, index):
+    with open(file_path, "r") as file:
+        file_content = file.read()
+        new_paragraph = file_content.replace(f"[[ paragraph{index} ]]", f"<p>{paragraph_content}</p>")
+    with open(file_path, "w") as file:
+        file.write(new_paragraph)
+
 file_path ='./articles-text/test-article.txt'
 headers, paragraphs = input_parse(file_path)
-header1, header2, header3, header4, header5 = headers
-p1, p2, p3, p4, p5 = paragraphs
 
-print(header1)
-print(header2)
-print(header3)
-print(header4)
-print(header5)
+for count, item in enumerate(headers, start=1):
+    replace_headers("./articles-html/10.14.24.html", headers[count-1], count)
 
-print(p1)
-print(p2)
-print(p3)
-print(p4)
-print(p5)
+for count, item in enumerate(paragraphs, start=1):
+    replace_paragraphs("./articles-html/10.14.24.html", paragraphs[count-1], count)
+
+
 
