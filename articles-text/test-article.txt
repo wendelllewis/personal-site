@@ -1,3 +1,4 @@
-##This is title 1
-#paragraph paragraph paragraph paragraph paragraph paragraph
-##Title 2
+##Thoughts on the Electoral College
+#Here are my thoughts on the electoral college in the United States of America. This system is one that is confusing for those who do not live in the US, given the fact that it really does not make much sense. Perhaps it is finally time for us to reform this system, and enact the popular vote nationwide. Now, there is a proposition to do just that.
+##Why is this sytem in place?
+#During the framing of the US constitution, different states advocated for their interests, often influenced by the economy of their state, and how different systems for voter representation would effect how people were actually represented. The result? A constitution in which Black voters in the south were under-represented in the electoral system.
