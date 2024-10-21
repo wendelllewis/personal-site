@@ -16,15 +16,18 @@ def input_parse(file_path):
     paragraphs_final = [item[1:] for item in paragraphs]
     images_final = [item[1:] for item in images]
 
-    return headers_final, paragraphs_final
+    return headers_final, paragraphs_final, images_final
 
-def writetofile(file_path, headers, paragraphs):
+def writetofile(file_path, headers, paragraphs, images):
     with open(file_path, "r") as file:
         file_content = file.readlines()
     for count, header in enumerate(headers):
         file_content.insert(count * 2 + 9, f"<h1>{header}</h1>\n")
         if count < len(paragraphs):
             file_content.insert(count * 2 + 10, f"<p>{paragraphs[count]}</p>\n")
+    for count, image in enumerate(images):
+        file_content.insert(count * 2 + 11, f'<img src={images[count]} alt=>\n')
+        print('remember to add alt text to images!')
     with open("./articles-html/10.14.24.html", "w") as file:
         file.writelines(file_content)
 
@@ -34,8 +37,8 @@ output_name = input('output name?')
 input_path = f"./articles-text/{input_name}.txt"
 output_path = f'./articles-html/{output_name}.html'
 
-headers, paragraphs = input_parse(input_path)
-writetofile(output_path, headers, paragraphs)
+headers, paragraphs, images = input_parse(input_path)
+writetofile(output_path, headers, paragraphs, images)
 
 
 
