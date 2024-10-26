@@ -1,5 +1,10 @@
+:root {
+    --background: rgb(26, 71, 26);
+    --accent: rgb(255, 0, 0);
+}
+
 body {
-    background-color: darkblue;
+    background-color: var(--background);
     box-sizing: border-box;
 }
 
@@ -11,6 +16,7 @@ body {
 
 h1 {
     font-size: 4em;
+    font-family: 'Arial Narrow';
 }
 
 p {
@@ -19,13 +25,13 @@ p {
 
 img {
     max-width: 100%;
-    border: dashed 2px white;
+    border: dashed 2px var(--accent);
 }
 
 iframe {
     min-width: 100%;
     min-height: 500px;
-    border: dashed 2px white;
+    border: dashed 2px var(--accent);
 }
 
 a {
@@ -35,5 +41,5 @@ a {
 
 .em {
     padding: 10px;
-    border: solid 1px white;
+    border: solid 1px var(--accent);
 }
