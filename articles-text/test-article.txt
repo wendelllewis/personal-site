@@ -1,7 +1,0 @@
-##My First Article
-#Welcome to my first article!!
-#I am very excited to be writing this.
-@../images/test-image.jpeg
-#More paragraphs go here
-#Even more go here. 
-#Vote for Kamala Harris

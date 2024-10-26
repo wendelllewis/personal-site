@@ -20,6 +20,10 @@ body {
    }
 }
   
+.centered-block a {
+    color: white;
+    text-decoration-color: var(--accent);
+}
 
 p {
     text-align: justify;

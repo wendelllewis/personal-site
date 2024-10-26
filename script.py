@@ -12,14 +12,16 @@ def input_parse(file_path):
                 lines[i] = '<p>' + element[1:] + '</p>'
             elif element.startswith('@'):
                 lines[i] = '<img src="' + element[1:] + '">'
+            elif element.startswith('!'):
+                lines[i] = '<p class="em">' + element[1:] + '</p>'
     return lines
 def writetofile(file_path, code):
-    with open(file_path, "r") as file:
+    with open('./articles-html/template.html', "r") as file:
         file_content = file.readlines()
     for count, line in enumerate(code):
         file_content.insert(count + 10, line + '\n')
         file_content.insert(count + 11, '\n')
-    with open("./articles-html/10.14.24.html", "w") as file:
+    with open(file_path, "w") as file:
         file.writelines(file_content)
 
 input_name = input('input name?')
